@@ -18,13 +18,17 @@ section {
         justify-content: space-between;
         align-items: center;
         .logo {
-            font-size: 2rem;
+            font-size: 3rem;
             color: #ffffff;
             z-index: 100;
             text-decoration: none;
             text-shadow: 2px 2px 0 rgba($color: #333, $alpha: 0.7);
             transition: 0.5s;
+            transition-delay: 0.1s;
             font-weight: 700;
+            &:hover {
+                color: #fff;
+            }
         }
         .toggle {
             position: relative;
@@ -92,7 +96,7 @@ section {
             position: relative;
             color: #fff;
             font-size: 7vw;
-            text-shadow: 0 5px 5px rgba($color: #000000, $alpha: .2);
+            text-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
             line-height: 8vw;
             span {
                 font-size: 3vw;
@@ -102,9 +106,8 @@ section {
                 color: #111;
                 padding: 0 10px;
                 text-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0);
-                box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .2);
+                box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
             }
-
         }
     }
     .social {
@@ -116,7 +119,7 @@ section {
         li {
             text-decoration: none;
             list-style: none;
-            margin: 5px;
+            margin: 10px;
             transition: 0.5s;
             transition-delay: calc(0.2s * var(--i));
         }
@@ -130,7 +133,41 @@ section {
             text-transform: uppercase;
         }
     }
-    
+    .nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+
+        li {
+            list-style: none;
+            text-align: center;
+            margin: 25px 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            transition-delay: 0s;
+            transform: translateX(350px);
+
+            a {
+                color: #000;
+                font-size: 3rem;
+                letter-spacing: 4px;
+                text-decoration: none;
+                font-weight: 300;
+                text-transform: uppercase;
+                background: #fff;
+                padding: 4px 16px;
+
+                &:hover {
+                    color: #fff;
+                    background: #000;
+                    letter-spacing: 10px;
+                }
+            }
+        }
+    }
 }
 section.active .glass {
     width: 100%;
@@ -140,11 +177,20 @@ section.active .content {
     opacity: 0;
     visibility: hidden;
     transform: translateX(-300px);
-
 }
 section.active .social li {
     opacity: 0;
     visibility: hidden;
     transform: translateY(100px);
-} 
+}
+section.active .logo {
+    transform: translateY(-100px);
+    opacity: 0;
+}
+section.active .nav li {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition-delay: calc(0.2s * var(--i));
 
+}
