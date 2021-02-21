@@ -25,24 +25,32 @@
     <meta name="msapplication-TileImage" content="icons/fav/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
 
-    <section>
+    <section class="section">
         <header class="header">
             <a class="logo">WebDev.</a>
-            
+
 
             <div class="toggle" onclick="menuToggle();"></div>
         </header>
+        
         <div class="glass"></div>
-        <video src="img/bg.mp4" autoplay muted loop playsinline controls="true"></video>
+        <div class="content">
+            <h2>My Portfolio <br> <span>Vovk Roman</span></h2>
+        </div>
+        <video src="img/bg.mp4" autoplay muted loop playsinline></video>
+        <ul class="social">
+            <li style="--i:1"><a href="https://www.linkedin.com/in/roman--vovk">LinkedIn</a></li>
+            <li style="--i:2"><a href="https://www.instagram.com/young_papitto/">Instagram</a></li>
+            <li style="--i:3"><a href="https://www.facebook.com/profile.php?id=100017203961140">Facebook</a></li>
+        </ul>
     </section>
-
     <script src="js/script.js"></script>
 </body>
 
