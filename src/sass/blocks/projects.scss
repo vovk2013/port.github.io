@@ -1,0 +1,35 @@
+.projects {
+    height: 100vh;
+    background: rgba(109, 109, 223, 0.308);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    h2 {
+        text-align: center;
+        font-size: 8rem;
+        padding-bottom: 30px;
+        color: rgb(25, 23, 75);
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a {
+            width: 400px; 
+            height: 300px;
+            margin: 20px;
+            transition: transform 0.1s linear;
+            &:hover {
+                transform: scale(1.1);
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid #446;
+                border-radius: 35px;
+                box-shadow: 30px 30px 50px #446;
+            }
+        }
+    }
+}
