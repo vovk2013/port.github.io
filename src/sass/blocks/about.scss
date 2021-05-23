@@ -1,0 +1,60 @@
+.about {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "avatar text text text"
+        "avatar born now character"
+        "avatar born now character"
+        "avatar born now character"
+        "avatar born now character";
+    background: #252525;
+    gap: 20px;
+    padding: 15px;
+    .avatar {
+        grid-area: avatar;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border: 2px solid $black-text-color;
+            
+        }
+    }
+
+    h2 {
+        display: flex;
+        align-items: center;
+        color: rgba($color: $text-color, $alpha: 0.8);
+        text-shadow: 10px 10px 40px rgba($color: $text-color, $alpha: 1);
+        grid-area: text;
+        font-size: 50px;
+        text-align: center;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 3px solid $black-text-color;
+    }
+
+    p {
+        font-size: 16px;
+        color: $text-color;
+        width: 100%;
+        max-width: 300px;
+        span {
+            font-size: 26px;
+        }
+    }
+
+    .born {
+        grid-area: born;
+    }
+
+    .now {
+        grid-area: now;
+    }
+
+    .character {
+        grid-area: character;
+    }
+}
