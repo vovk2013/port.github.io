@@ -1,4 +1,5 @@
 .section {
+    background: url('../../img/bgs/bgmain.jpg') center center/cover no-repeat;
     position: relative;
     height: 100vh;
     width: 100%;
@@ -6,7 +7,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: rgb(59, 49, 151);
     .header {
         position: absolute;
         top: 0;
@@ -18,16 +18,16 @@
         justify-content: space-between;
         align-items: center;
         .logo {
-            font-size: 3rem;
-            color: #ffffff;
+            font-size: 32px;
+            color: $text-color;
             z-index: 100;
             text-decoration: none;
-            text-shadow: 2px 2px 0 rgba($color: #333, $alpha: 0.7);
+            text-shadow: 2px 2px 0 rgba($color: $red-color, $alpha: 0.7);
             transition: 0.5s;
             transition-delay: 0.1s;
             font-weight: 700;
             &:hover {
-                color: #fff;
+                color: $text-color;
             }
         }
         .toggle {
@@ -47,12 +47,12 @@
                 position: absolute;
                 right: 45px;
                 text-transform: uppercase;
-                color: #ffffff;
+                color: $text-color;
                 letter-spacing: 2px;
                 font-size: 1.4rem;
                 padding: 2px 5px;
-                background: #fff;
-                color: #111;
+                background: $text-color;
+                color: $black-text-color;
                 transition: all 0.5s;
             }
         }
@@ -67,15 +67,6 @@
             }
         }
     }
-
-    video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
     .glass {
         position: absolute;
         top: 0;
@@ -84,7 +75,7 @@
         height: 100%;
         z-index: 1;
         backdrop-filter: blur(10px);
-        box-shadow: 10px 0 15px rgba($color: #ffffff, $alpha: 0.2);
+        box-shadow: 15px 0 60px rgba($color: #ff1717a6, $alpha: 0.5);
         transition: 1s;
     }
     .content {
@@ -94,26 +85,26 @@
         transition: 0.5s;
         h2 {
             position: relative;
-            color: #fff;
-            font-size: 7vw;
-            text-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
+            color: $text-color;
+            font-size: 128px;
+            text-shadow: 5px 5px 5px rgba($color: $red-color, $alpha: 0.4);
             line-height: 8vw;
             span {
-                font-size: 3vw;
+                font-size: 64px;
                 font-weight: 300;
                 letter-spacing: 5px;
-                background: #fff;
-                color: #111;
-                padding: 0 10px;
-                text-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0);
-                box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
+                background: $text-color;
+                color: $black-text-color;
+                padding: 0 16px;
+                text-shadow: 0 5px 5px rgba($color: $red-color, $alpha: 0);
+                box-shadow: 0 5px 5px rgba($color: $red-color, $alpha: 0.2);
             }
         }
     }
     .social {
         position: absolute;
         bottom: 40px;
-        right: 10%;
+        right: 5%;
         display: flex;
         z-index: 100;
         li {
@@ -124,17 +115,17 @@
             transition-delay: calc(0.2s * var(--i));
         }
         a {
-            font-size: 1.3vw;
-            color: #000;
-            background: #fff;
-            padding: 5px 10px;
+            font-size: 32px;
+            color: $black-text-color;
+            background: $text-color;
+            padding: 2px 10px;
             letter-spacing: 2px;
             font-weight: 500;
             text-transform: uppercase;
             transition: 0.5s;
             &:hover {
-                color: #fff;
-                background: #000;
+                color: $text-color;
+                background: $black-text-color;
                 text-decoration: none;
                 transition: 0.5s;
             }
@@ -160,18 +151,18 @@
             a {
                 transition: 0.5s;
                 transition-delay: 0s;
-                color: #000;
+                color: $black-text-color;
                 font-size: 3rem;
                 letter-spacing: 4px;
                 text-decoration: none;
                 font-weight: 300;
                 text-transform: uppercase;
-                background: #fff;
+                background: $text-color;
                 padding: 4px 16px;
 
                 &:hover {
-                    color: #fff;
-                    background: #000;
+                    color: $text-color;
+                    background: $black-text-color;
                     letter-spacing: 10px;
                 }
             }
