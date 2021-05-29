@@ -4,6 +4,7 @@
 @import 'blocks/header.scss';
 @import 'blocks/projects.scss';
 @import 'blocks/about.scss';
+@import 'blocks/skills.scss';
 
 * {
     box-sizing: border-box;
@@ -14,5 +15,19 @@
     user-select: none;
 }
 
-
-
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba($color: $text-color, $alpha: 0.8);
+    text-shadow: 10px 10px 40px rgba($color: $text-color, $alpha: 1);
+    font-size: 50px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 3px solid $black-text-color;
+    width: 100%;
+    padding-bottom: 20px;
+}
+section {
+    padding: 20px;
+}
