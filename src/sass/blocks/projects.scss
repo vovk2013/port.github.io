@@ -11,8 +11,9 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        width: 100%;
 
         a {
             width: 300px; 
