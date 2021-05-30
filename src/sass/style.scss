@@ -1,10 +1,10 @@
-@import 'base/mixins';
 @import 'base/variables';
 @import 'libs/bootstrap-reboot.min';
-@import 'blocks/header.scss';
-@import 'blocks/projects.scss';
-@import 'blocks/about.scss';
-@import 'blocks/skills.scss';
+@import 'blocks/header';
+@import 'blocks/projects';
+@import 'blocks/about';
+@import 'blocks/skills';
+@import 'base/mixins';
 
 * {
     box-sizing: border-box;
