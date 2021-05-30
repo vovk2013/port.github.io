@@ -39,6 +39,14 @@
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        h2 {
+            border-bottom: none;
+        }
+        .hidden {
+            display: none;
+        }
         .avatar {
             width: 30%;
             height: 500px;
@@ -47,9 +55,16 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            align-items: center;
             width: 60%;
+            padding-left: 30px;
+            padding-top: 0;
             p {
-                width: 100%;
+                max-width: 100%;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $text-color;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         }
     }
