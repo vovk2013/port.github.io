@@ -91,5 +91,113 @@
 }
 
 @media only screen and (max-width: 991px) {
-    
+    h2 {
+        font-size: 42px !important;
+    }
+    .section {
+        .header {
+            padding: 30px 40px;
+        }
+        .content {
+            h1 {
+                font-size: 80px;
+                span {
+                    font-size: 40px;
+                }
+            }
+        }
+        .social {
+            right: 40px;
+            a {
+                font-size: 22px;
+            }
+        }
+    }
+    .about {
+        .avatar {
+            width: 300px;
+            height: 500px;
+        }
+        .p__wrapper {
+            width: 85%;
+        }
+    }
+    .skills {
+        ul {
+            padding: 20px 10px;
+            li {
+                height: 50px;
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .section {
+        .content {
+            h1 {
+                font-size: 64px;
+                span {
+                    font-size: 32px;
+                }
+            }
+        }
+        .social {
+            right: 40px;
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    h2 {
+        font-size: 34px !important;
+    }
+    .section {
+        .header {
+            padding: 20px 20px;
+          
+        }
+        .content {
+            h1 {
+                font-size: 54px;
+                span {
+                    font-size: 30px;
+                }
+            }
+            
+          }
+        .social {
+            justify-content: center;
+            flex-wrap: wrap;
+            right: 50%;
+            transform: translateX(50%);
+            li {
+                margin: 10px;
+            }
+            a {
+                letter-spacing: 4px;
+                font-size: 24px;
+                padding: 2px 35px;
+                
+            }
+        }
+    }
+    .skills {
+        ul {
+            padding: 20px 0px;
+            li {
+                height: 40px;
+                width: 80%;
+                margin: 10px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
 }
