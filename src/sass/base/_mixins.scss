@@ -164,6 +164,7 @@
         .content {
             h1 {
                 font-size: 54px;
+                margin-bottom: 120px;
                 span {
                     font-size: 30px;
                 }
@@ -175,12 +176,13 @@
             flex-wrap: wrap;
             right: 50%;
             transform: translateX(50%);
+            margin-bottom: 20px;
             li {
                 margin: 10px;
             }
             a {
                 letter-spacing: 4px;
-                font-size: 24px;
+                font-size: 18px;
                 padding: 2px 35px;
                 
             }
